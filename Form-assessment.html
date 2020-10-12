@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+       form{
+           margin:0 auto;
+           margin-top: 175px;
+           width: 400px;
+           border: 10px solid rgb(255, 117, 3);
+           background-color: bisque;
+           border-radius: 1em;
+       }       
+
+       input[type=text], input[type=number], input[type=email], textarea{
+           padding-left: 10px;
+       }
+
+       h1{
+           text-align: center;
+           color: rgb(255, 117, 3);
+       }
+       p{
+           margin-left: 50px;
+       }
+       input, textarea{
+           width: 300px;
+           border: 1px solid rgb(255, 117, 3);
+           font-size: 15px;
+       }
+       input{
+           height: 30px;
+       }
+
+       input{
+        border: 1px solid rgb(240, 111, 6);
+       }
+
+       button{
+           background-color: rgb(255, 117, 3);
+           width: 308px;
+           margin-top: 20px;
+           height: 40px;
+           border: 1px;
+           border-radius: 1em;
+           font-weight: bold;
+           color: rgb(238, 229, 229);
+           font-size: 15px;
+       }
+
+       button:hover{
+           background-color: rgb(240, 111, 6);
+           cursor: pointer;
+       }
+       
+    </style>
+</head>
+<body>
+    <form action="form-welcome.html" method="POST">
+        <h1>Welcome to Rupeek</h1>
+        <p><input type="text" placeholder="Name" name="user_name"></p>
+        <p><input type="text" maxlength="10" placeholder="Phone Number" name="user_phone"></p>
+        <p><input type="email" placeholder="Email" name="user_email"></p>
+        <p><textarea name="text" id="msg" cols="20" rows="5" placeholder="Write to us"></textarea></p>
+        <p><button type="submit">SEND</button></p>
+    </form>
+</body>
+</html>
