@@ -9,13 +9,16 @@ var phones = [
 
 const phone = [];
 phones.forEach(customer => phone.push(customer.name));
-console.log(phone);
+// console.log(phone);
+
+const newPhone = phones.filter(phone => phone.type==='new');
+console.log(newPhone);
 
 const price440 = [];
 phones.forEach(customer => {
     if(customer.price <= 440) {
         price440.push(customer);
     }
-;
-console.log(price440);})
+});
+// console.log(price440);})
 
