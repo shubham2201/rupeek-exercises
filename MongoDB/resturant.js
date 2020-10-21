@@ -89,4 +89,44 @@ db.resturants.find({
     'borough': {$ne: 'Brooklyn'}
 }).sort({'cuisine':-1});
 
-// 14
+
+// 14. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Wil' as first three letters for its name.
+db.resturants.find(
+    {
+    name: { $regex: /^Wil/ }
+    },
+    {
+        resturant_id:1,
+        name:1,
+        borough:1,
+        cuisine:1
+    }
+)
+
+
+// 15. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'ces' as last three letters for its name. 
+db.resturants.find(
+    {
+        name: {$regex: /ces$/}
+    },
+    {
+        resturant_id:1,
+        name:1,
+        borough:1,
+        cuisine:1
+    }
+);
+
+// 16. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Reg' as three letters somewhere in its name. 
+db.resturants.find(
+    {
+        name: {$regex: /Reg/}
+    },
+    {
+        resturant_id:1,
+        name:1,
+        borough:1,
+        cuisine:1
+    }
+);
+
