@@ -1,0 +1,98 @@
+/* .navbar {
+    height: 40px;
+    background-color: navy;
+}
+
+.nav ,.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a {
+    padding: 5px 10px;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb( 255, 255, 255 );
+    background-color: darkgray;
+} */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.col {
+    width: 33.3333333333%;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.my-3 {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5 em !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+@media all and (min-width: 640px) {
+    .col {
+        flex-basis: 46%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .col {
+        flex-basis: 30%;
+    }
+}
+
+.message {
+    display: none;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+}
+
+.message-error{
+    border-color: crimson;
+    background-color: lightpink;
+}
+
+.message-info {
+    border-color: blue;
+    background-color: lightblue;
+}
